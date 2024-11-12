@@ -1,6 +1,6 @@
 import { NoteData, Tag } from '../App'
 import EditForm from '../components/EditForm'
-import NewForm from '../components/NewForm'
+
 import { useNote } from './NoteLayout'
 
 type EditNoteProps = {

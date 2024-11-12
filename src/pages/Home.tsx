@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react'
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ReactSelect from 'react-select'
-import { Note, Tag } from '../App'
+import { Tag } from '../App'
 import NoteCard, { SimplifiedNote } from '../components/NoteCard'
 import { Button, Col, Form, Row, Stack, Modal } from 'react-bootstrap'
 // import 'bootstrap/dist/css/bootstrap.min.css'
@@ -21,7 +21,7 @@ type EditTagsModalProps = {
   updateTag: (id: string, label: string) => void
 }
 
-const Home: React.FC = ({
+const Home = ({
   availableTags,
   notes,
   updateTag,
